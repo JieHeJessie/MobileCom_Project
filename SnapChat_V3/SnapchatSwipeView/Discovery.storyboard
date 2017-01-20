@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NkA-9L-fpd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Discovery-->
+        <scene sceneID="mUe-oG-c6F">
+            <objects>
+                <collectionViewController id="0Wr-29-zbs" customClass="PublishersCollectionViewController" customModule="SnapChat_V3" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="SkU-Jq-nFk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="ONq-kf-TrS">
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="8"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PublisherCell" id="7Zv-CX-XoJ" customClass="PublishersCollectionViewCell" customModule="SnapChat_V3" customModuleProvider="target">
+                                <rect key="frame" x="107" y="72" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MIT Technology Review" translatesAutoresizingMaskIntoConstraints="NO" id="LyS-1X-8aQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        </imageView>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HoX-1F-v7h">
+                                            <rect key="frame" x="0.0" y="162" width="200" height="38"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="Fhe-wp-Hci">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jLg-Xh-jAK">
+                                                        <rect key="frame" x="0.0" y="8" width="200" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="jLg-Xh-jAK" secondAttribute="trailing" id="a8p-XT-Av2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="jLg-Xh-jAK" secondAttribute="bottom" constant="9" id="ccO-Jc-kIg"/>
+                                                    <constraint firstItem="jLg-Xh-jAK" firstAttribute="top" secondItem="Fhe-wp-Hci" secondAttribute="top" constant="8" id="dTn-xo-dN8"/>
+                                                    <constraint firstItem="jLg-Xh-jAK" firstAttribute="leading" secondItem="Fhe-wp-Hci" secondAttribute="leading" id="kBS-8W-WEh"/>
+                                                </constraints>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="LyS-1X-8aQ" secondAttribute="bottom" id="06m-rU-Xcw"/>
+                                    <constraint firstItem="LyS-1X-8aQ" firstAttribute="top" secondItem="7Zv-CX-XoJ" secondAttribute="top" id="FXl-6N-k7B"/>
+                                    <constraint firstAttribute="trailing" secondItem="LyS-1X-8aQ" secondAttribute="trailing" id="gNO-ha-HA9"/>
+                                    <constraint firstItem="LyS-1X-8aQ" firstAttribute="leading" secondItem="7Zv-CX-XoJ" secondAttribute="leading" id="yrk-cw-CYk"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="publisherTitleLabel" destination="jLg-Xh-jAK" id="xas-6J-JoW"/>
+                                    <outlet property="publisherimageView" destination="LyS-1X-8aQ" id="el7-jd-Vhd"/>
+                                    <outlet property="visualEffectiveView" destination="HoX-1F-v7h" id="Zea-Pi-Ct4"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="0Wr-29-zbs" id="67z-Ln-OOk"/>
+                            <outlet property="delegate" destination="0Wr-29-zbs" id="oJu-9s-vsj"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Discovery" id="sMK-5a-Htg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="xRF-ec-lSi" kind="show" identifier="ShowWebView" id="ikX-1e-Bmo">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPR-uy-mpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="404"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="0GE-qN-i94">
+            <objects>
+                <viewController storyboardIdentifier="ShowWebView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xRF-ec-lSi" customClass="WebViewController" customModule="SnapChat_V3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pXp-mK-pMB"/>
+                        <viewControllerLayoutGuide type="bottom" id="r5z-pF-IRP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wkj-Xm-8vM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocd-MG-mzI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m5U-X2-oFH">
+                                <rect key="frame" x="0.0" y="64" width="594" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ocd-MG-mzI" firstAttribute="leading" secondItem="wkj-Xm-8vM" secondAttribute="leading" id="Inm-My-t9U"/>
+                            <constraint firstItem="ocd-MG-mzI" firstAttribute="top" secondItem="wkj-Xm-8vM" secondAttribute="top" id="Rww-5F-4Nw"/>
+                            <constraint firstItem="r5z-pF-IRP" firstAttribute="top" secondItem="ocd-MG-mzI" secondAttribute="bottom" id="cCc-5m-879"/>
+                            <constraint firstAttribute="trailing" secondItem="ocd-MG-mzI" secondAttribute="trailing" id="pbZ-uM-ih0"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="progressView" destination="m5U-X2-oFH" id="zwu-pG-ErH"/>
+                        <outlet property="webView" destination="ocd-MG-mzI" id="Amj-8e-iff"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kuo-52-j8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384" y="404"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="88y-1c-vtX">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="NkA-9L-fpd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y8F-CE-DvI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Wr-29-zbs" kind="relationship" relationship="rootViewController" id="Rh0-pS-sBA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7oN-36-08L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-350" y="415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MIT Technology Review" width="171" height="220"/>
+    </resources>
+</document>

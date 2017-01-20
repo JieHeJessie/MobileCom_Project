@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22656DEA1C1F67D700BF6959 /* VerticalScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22656DE91C1F67D700BF6959 /* VerticalScrollViewController.swift */; };
+		22656DEC1C2059C100BF6959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22656DEB1C2059C100BF6959 /* Main.storyboard */; };
+		22656DEE1C205A6800BF6959 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22656DED1C205A6800BF6959 /* Launch Screen.storyboard */; };
+		22D3F92C1B87A8B800D132E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3F9201B87A8B800D132E3 /* AppDelegate.swift */; };
+		22D3F9311B87A8B800D132E3 /* SnapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3F9251B87A8B800D132E3 /* SnapContainerViewController.swift */; };
+		AD0BEF651D979E9D00DF1732 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BEF631D979E9D00DF1732 /* LoginViewController.swift */; };
+		AD0BEF661D979E9D00DF1732 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BEF641D979E9D00DF1732 /* RegisterViewController.swift */; };
+		AD0BEF681D97A9F100DF1732 /* ImageEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0BEF671D97A9F100DF1732 /* ImageEdit.storyboard */; };
+		AD0BEF6A1D97ABB100DF1732 /* ImageEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BEF691D97ABB100DF1732 /* ImageEditViewController.swift */; };
+		AD0BEFDB1D9CC28400DF1732 /* MemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BEFDA1D9CC28400DF1732 /* MemoryViewController.swift */; };
+		AD0BEFDE1D9CC2CE00DF1732 /* memory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0BEFDD1D9CC2CE00DF1732 /* memory.storyboard */; };
+		AD0BEFE01D9CED3500DF1732 /* photoAlbum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0BEFDF1D9CED3500DF1732 /* photoAlbum.storyboard */; };
+		AD0BEFE31D9CEE3600DF1732 /* PhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BEFE21D9CEE3600DF1732 /* PhotoAlbumViewController.swift */; };
+		AD0BEFE71D9D11D500DF1732 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BEFE61D9D11D500DF1732 /* PageViewController.swift */; };
+		AD0BEFE91D9D1B0600DF1732 /* UpdatedMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BEFE81D9D1B0600DF1732 /* UpdatedMemoryViewController.swift */; };
+		AD249B6F1DAB7B13000CB08D /* searchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD249B6E1DAB7B13000CB08D /* searchTableViewController.swift */; };
+		AD249B721DACDF59000CB08D /* sendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD249B711DACDF59000CB08D /* sendViewController.swift */; };
+		AD249B791DADDB9F000CB08D /* QRCodeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD249B781DADDB9F000CB08D /* QRCodeTool.swift */; };
+		AD249B7F1DADDE2C000CB08D /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD249B7E1DADDE2C000CB08D /* QRCodeViewController.swift */; };
+		AD249B821DADDE4E000CB08D /* Barcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD249B811DADDE4E000CB08D /* Barcode.storyboard */; };
+		AD249B851DAE26C1000CB08D /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD249B841DAE26C1000CB08D /* Friends.swift */; };
+		AD249B871DAE26EA000CB08D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD249B861DAE26EA000CB08D /* User.swift */; };
+		AD2CCF6D1DAB6F9D006A9BB8 /* editViewControllerInShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2CCF6C1DAB6F9D006A9BB8 /* editViewControllerInShake.swift */; };
+		ADA4BA561D8D18D60058E13D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4BA551D8D18D60058E13D /* CameraViewController.swift */; };
+		ADA4BA591D8D2BC40058E13D /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4BA581D8D2BC40058E13D /* StoryViewController.swift */; };
+		ADA4BA5C1D8D3CF80058E13D /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4BA5B1D8D3CF80058E13D /* DiscoveryViewController.swift */; };
+		ADA4BA5F1D8D3F2D0058E13D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4BA5E1D8D3F2D0058E13D /* ChatViewController.swift */; };
+		ADA4BA671D9792EB0058E13D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA4BA661D9792EB0058E13D /* Images.xcassets */; };
+		ADA930F11DA8889700D9C0D3 /* StoryViewController_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA930F01DA8889700D9C0D3 /* StoryViewController_TableView.swift */; };
+		ADA930F31DA8897300D9C0D3 /* StoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA930F21DA8897300D9C0D3 /* StoryCollectionCell.swift */; };
+		ADA930F61DA88CAC00D9C0D3 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA930F51DA88CAC00D9C0D3 /* Story.swift */; };
+		ADA930F81DA88CB900D9C0D3 /* Magazine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA930F71DA88CB900D9C0D3 /* Magazine.swift */; };
+		ADA930FB1DA89A1100D9C0D3 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA930FA1DA89A1100D9C0D3 /* MessageCell.swift */; };
+		ADA930FD1DA89A2600D9C0D3 /* SubcriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA930FC1DA89A2600D9C0D3 /* SubcriptionCell.swift */; };
+		ADA931001DAA056400D9C0D3 /* lockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA930FF1DAA056400D9C0D3 /* lockViewController.swift */; };
+		ADA931041DAA0F3300D9C0D3 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA931031DAA0F3300D9C0D3 /* User.storyboard */; };
+		ADA931061DAA107F00D9C0D3 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA931051DAA107F00D9C0D3 /* UserViewController.swift */; };
+		ADA931091DAA11B100D9C0D3 /* AddedFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA931081DAA11B100D9C0D3 /* AddedFriendTableViewController.swift */; };
+		ADA9310B1DAA15A200D9C0D3 /* MyFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA9310A1DAA15A200D9C0D3 /* MyFriendsTableViewController.swift */; };
+		ADA9310D1DAA166B00D9C0D3 /* AddFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA9310C1DAA166B00D9C0D3 /* AddFriendTableViewController.swift */; };
+		ADB4306C1DAE2DF90097FE90 /* StoryMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4306B1DAE2DF90097FE90 /* StoryMessage.swift */; };
+		ADB4306E1DAE2E020097FE90 /* StoryMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4306D1DAE2E020097FE90 /* StoryMessages.swift */; };
+		ADB430711DAF957C0097FE90 /* shakeShakeMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB430701DAF957C0097FE90 /* shakeShakeMessage.swift */; };
+		ADB430731DAF95C30097FE90 /* shakeShakeMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB430721DAF95C30097FE90 /* shakeShakeMessages.swift */; };
+		ADB430751DAFA5120097FE90 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB430741DAFA5120097FE90 /* Social.framework */; };
+		ADB430781DAFA5960097FE90 /* socialShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB430771DAFA5960097FE90 /* socialShareViewController.swift */; };
+		ADB4307A1DAFA5D20097FE90 /* SocialShare.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB430791DAFA5D20097FE90 /* SocialShare.storyboard */; };
+		ADB4307C1DAFAFA40097FE90 /* ImageEditViewController_Same.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4307B1DAFAFA40097FE90 /* ImageEditViewController_Same.swift */; };
+		ADB4307F1DB0EF5B0097FE90 /* AddedFriendMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4307E1DB0EF5B0097FE90 /* AddedFriendMessage.swift */; };
+		ADB430811DB0EF8F0097FE90 /* AddedFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB430801DB0EF8F0097FE90 /* AddedFriendMessages.swift */; };
+		ADF9A2ED1D9E101200C6CC4A /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF9A2EC1D9E101200C6CC4A /* login.storyboard */; };
+		ADF9A2EF1D9E188100C6CC4A /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9A2EE1D9E188100C6CC4A /* DrawingView.swift */; };
+		ADF9A2F21D9E1F5A00C6CC4A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9A2F11D9E1F5A00C6CC4A /* Line.swift */; };
+		ADF9A2F51D9F91E900C6CC4A /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF9A2F41D9F91E900C6CC4A /* Discovery.storyboard */; };
+		ADF9A2F71D9F92D600C6CC4A /* PublishersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9A2F61D9F92D600C6CC4A /* PublishersCollectionViewCell.swift */; };
+		ADF9A2F91D9F92FD00C6CC4A /* PublishersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9A2F81D9F92FD00C6CC4A /* PublishersCollectionViewController.swift */; };
+		ADF9A2FC1D9F932600C6CC4A /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9A2FB1D9F932600C6CC4A /* Publisher.swift */; };
+		ADF9A2FE1D9F933A00C6CC4A /* Publishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9A2FD1D9F933A00C6CC4A /* Publishers.swift */; };
+		ADF9A3001D9F938D00C6CC4A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9A2FF1D9F938D00C6CC4A /* WebViewController.swift */; };
+		ADF9A3041D9FA62B00C6CC4A /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9A3031D9FA62B00C6CC4A /* SnapViewController.swift */; };
+		ADF9A30A1DA0BF9100C6CC4A /* shakeShake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF9A3091DA0BF9100C6CC4A /* shakeShake.storyboard */; };
+		ADF9A30D1DA0BFC200C6CC4A /* ShakeShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9A30C1DA0BFC200C6CC4A /* ShakeShakeViewController.swift */; };
+		ADF9A3161DA0C44A00C6CC4A /* rock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ADF9A3141DA0C44A00C6CC4A /* rock.mp3 */; };
+		ADF9A3171DA0C44A00C6CC4A /* rock_end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ADF9A3151DA0C44A00C6CC4A /* rock_end.mp3 */; };
+		ADF9A31A1DA4F91700C6CC4A /* Story.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF9A3191DA4F91700C6CC4A /* Story.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22656DE91C1F67D700BF6959 /* VerticalScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalScrollViewController.swift; sourceTree = "<group>"; };
+		22656DEB1C2059C100BF6959 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		22656DED1C205A6800BF6959 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
+		22D3F9201B87A8B800D132E3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22D3F9251B87A8B800D132E3 /* SnapContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapContainerViewController.swift; sourceTree = "<group>"; };
+		AD0BEF631D979E9D00DF1732 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AD0BEF641D979E9D00DF1732 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AD0BEF671D97A9F100DF1732 /* ImageEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageEdit.storyboard; sourceTree = "<group>"; };
+		AD0BEF691D97ABB100DF1732 /* ImageEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEditViewController.swift; sourceTree = "<group>"; };
+		AD0BEFDA1D9CC28400DF1732 /* MemoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryViewController.swift; sourceTree = "<group>"; };
+		AD0BEFDD1D9CC2CE00DF1732 /* memory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = memory.storyboard; sourceTree = "<group>"; };
+		AD0BEFDF1D9CED3500DF1732 /* photoAlbum.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = photoAlbum.storyboard; sourceTree = "<group>"; };
+		AD0BEFE21D9CEE3600DF1732 /* PhotoAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumViewController.swift; sourceTree = "<group>"; };
+		AD0BEFE61D9D11D500DF1732 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		AD0BEFE81D9D1B0600DF1732 /* UpdatedMemoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatedMemoryViewController.swift; sourceTree = "<group>"; };
+		AD249B6E1DAB7B13000CB08D /* searchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchTableViewController.swift; sourceTree = "<group>"; };
+		AD249B711DACDF59000CB08D /* sendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sendViewController.swift; sourceTree = "<group>"; };
+		AD249B781DADDB9F000CB08D /* QRCodeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeTool.swift; sourceTree = "<group>"; };
+		AD249B7E1DADDE2C000CB08D /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		AD249B811DADDE4E000CB08D /* Barcode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Barcode.storyboard; sourceTree = "<group>"; };
+		AD249B841DAE26C1000CB08D /* Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		AD249B861DAE26EA000CB08D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AD2CCF6C1DAB6F9D006A9BB8 /* editViewControllerInShake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editViewControllerInShake.swift; sourceTree = "<group>"; };
+		ADA4BA551D8D18D60058E13D /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		ADA4BA581D8D2BC40058E13D /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		ADA4BA5B1D8D3CF80058E13D /* DiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		ADA4BA5E1D8D3F2D0058E13D /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		ADA4BA661D9792EB0058E13D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		ADA930F01DA8889700D9C0D3 /* StoryViewController_TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController_TableView.swift; sourceTree = "<group>"; };
+		ADA930F21DA8897300D9C0D3 /* StoryCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCollectionCell.swift; sourceTree = "<group>"; };
+		ADA930F51DA88CAC00D9C0D3 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		ADA930F71DA88CB900D9C0D3 /* Magazine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Magazine.swift; sourceTree = "<group>"; };
+		ADA930FA1DA89A1100D9C0D3 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		ADA930FC1DA89A2600D9C0D3 /* SubcriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubcriptionCell.swift; sourceTree = "<group>"; };
+		ADA930FF1DAA056400D9C0D3 /* lockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lockViewController.swift; sourceTree = "<group>"; };
+		ADA931031DAA0F3300D9C0D3 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		ADA931051DAA107F00D9C0D3 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		ADA931081DAA11B100D9C0D3 /* AddedFriendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedFriendTableViewController.swift; sourceTree = "<group>"; };
+		ADA9310A1DAA15A200D9C0D3 /* MyFriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFriendsTableViewController.swift; sourceTree = "<group>"; };
+		ADA9310C1DAA166B00D9C0D3 /* AddFriendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendTableViewController.swift; sourceTree = "<group>"; };
+		ADB4306B1DAE2DF90097FE90 /* StoryMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryMessage.swift; sourceTree = "<group>"; };
+		ADB4306D1DAE2E020097FE90 /* StoryMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryMessages.swift; sourceTree = "<group>"; };
+		ADB430701DAF957C0097FE90 /* shakeShakeMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shakeShakeMessage.swift; sourceTree = "<group>"; };
+		ADB430721DAF95C30097FE90 /* shakeShakeMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shakeShakeMessages.swift; sourceTree = "<group>"; };
+		ADB430741DAFA5120097FE90 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Social.framework; sourceTree = DEVELOPER_DIR; };
+		ADB430771DAFA5960097FE90 /* socialShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = socialShareViewController.swift; sourceTree = "<group>"; };
+		ADB430791DAFA5D20097FE90 /* SocialShare.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SocialShare.storyboard; sourceTree = "<group>"; };
+		ADB4307B1DAFAFA40097FE90 /* ImageEditViewController_Same.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEditViewController_Same.swift; sourceTree = "<group>"; };
+		ADB4307E1DB0EF5B0097FE90 /* AddedFriendMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedFriendMessage.swift; sourceTree = "<group>"; };
+		ADB430801DB0EF8F0097FE90 /* AddedFriendMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedFriendMessages.swift; sourceTree = "<group>"; };
+		ADF9A2EC1D9E101200C6CC4A /* login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
+		ADF9A2EE1D9E188100C6CC4A /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		ADF9A2F11D9E1F5A00C6CC4A /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		ADF9A2F41D9F91E900C6CC4A /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
+		ADF9A2F61D9F92D600C6CC4A /* PublishersCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishersCollectionViewCell.swift; sourceTree = "<group>"; };
+		ADF9A2F81D9F92FD00C6CC4A /* PublishersCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishersCollectionViewController.swift; sourceTree = "<group>"; };
+		ADF9A2FB1D9F932600C6CC4A /* Publisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
+		ADF9A2FD1D9F933A00C6CC4A /* Publishers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Publishers.swift; sourceTree = "<group>"; };
+		ADF9A2FF1D9F938D00C6CC4A /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		ADF9A3031D9FA62B00C6CC4A /* SnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
+		ADF9A3091DA0BF9100C6CC4A /* shakeShake.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = shakeShake.storyboard; sourceTree = "<group>"; };
+		ADF9A30C1DA0BFC200C6CC4A /* ShakeShakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeShakeViewController.swift; sourceTree = "<group>"; };
+		ADF9A3141DA0C44A00C6CC4A /* rock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rock.mp3; sourceTree = "<group>"; };
+		ADF9A3151DA0C44A00C6CC4A /* rock_end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rock_end.mp3; sourceTree = "<group>"; };
+		ADF9A3191DA4F91700C6CC4A /* Story.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Story.storyboard; sourceTree = "<group>"; };
+		C6164C1B1984D1CD00F8F7D7 /* SnapChat-V3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SnapChat-V3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6164C1F1984D1CD00F8F7D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6164C321984D1CD00F8F7D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6164C331984D1CD00F8F7D7 /* SnapchatSwipeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatSwipeViewTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6164C181984D1CD00F8F7D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB430751DAFA5120097FE90 /* Social.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2200D71B1B87A97E0081389A /* Container View */ = {
+			isa = PBXGroup;
+			children = (
+				22D3F9251B87A8B800D132E3 /* SnapContainerViewController.swift */,
+				22656DE91C1F67D700BF6959 /* VerticalScrollViewController.swift */,
+			);
+			name = "Container View";
+			sourceTree = "<group>";
+		};
+		AD0BEF621D979E7A00DF1732 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AD0BEF631D979E9D00DF1732 /* LoginViewController.swift */,
+				AD0BEF641D979E9D00DF1732 /* RegisterViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		AD0BEF6B1D97ABB700DF1732 /* ImageEdit */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A2F01D9E1F4800C6CC4A /* draw line */,
+				AD0BEF691D97ABB100DF1732 /* ImageEditViewController.swift */,
+			);
+			name = ImageEdit;
+			sourceTree = "<group>";
+		};
+		AD0BEFD91D9CC26600DF1732 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				ADA930FE1DAA054600D9C0D3 /* Lock */,
+				ADF9A3021D9FA61A00C6CC4A /* Snap */,
+				AD0BEFE11D9CEDC300DF1732 /* photoAlbum */,
+				AD0BEFDA1D9CC28400DF1732 /* MemoryViewController.swift */,
+				AD0BEFE61D9D11D500DF1732 /* PageViewController.swift */,
+				AD0BEFE81D9D1B0600DF1732 /* UpdatedMemoryViewController.swift */,
+			);
+			name = Memory;
+			sourceTree = "<group>";
+		};
+		AD0BEFDC1D9CC2AF00DF1732 /* memory */ = {
+			isa = PBXGroup;
+			children = (
+				AD0BEFDD1D9CC2CE00DF1732 /* memory.storyboard */,
+				AD0BEFDF1D9CED3500DF1732 /* photoAlbum.storyboard */,
+			);
+			name = memory;
+			sourceTree = "<group>";
+		};
+		AD0BEFE11D9CEDC300DF1732 /* photoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				AD0BEFE21D9CEE3600DF1732 /* PhotoAlbumViewController.swift */,
+			);
+			name = photoAlbum;
+			sourceTree = "<group>";
+		};
+		AD249B6B1DAB79C2000CB08D /* AddFriend */ = {
+			isa = PBXGroup;
+			children = (
+				ADB430761DAFA53C0097FE90 /* socialShare */,
+				AD249B771DADDB77000CB08D /* barcode */,
+				AD249B741DADDB2B000CB08D /* searchUserName */,
+				ADA9310C1DAA166B00D9C0D3 /* AddFriendTableViewController.swift */,
+			);
+			name = AddFriend;
+			sourceTree = "<group>";
+		};
+		AD249B701DACDF3E000CB08D /* Send friends */ = {
+			isa = PBXGroup;
+			children = (
+				AD249B711DACDF59000CB08D /* sendViewController.swift */,
+			);
+			name = "Send friends";
+			sourceTree = "<group>";
+		};
+		AD249B731DACDF67000CB08D /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				AD0BEF671D97A9F100DF1732 /* ImageEdit.storyboard */,
+			);
+			name = photo;
+			sourceTree = "<group>";
+		};
+		AD249B741DADDB2B000CB08D /* searchUserName */ = {
+			isa = PBXGroup;
+			children = (
+				AD249B6E1DAB7B13000CB08D /* searchTableViewController.swift */,
+			);
+			name = searchUserName;
+			sourceTree = "<group>";
+		};
+		AD249B751DADDB3A000CB08D /* Scan barcode */ = {
+			isa = PBXGroup;
+			children = (
+				AD249B7E1DADDE2C000CB08D /* QRCodeViewController.swift */,
+			);
+			name = "Scan barcode";
+			sourceTree = "<group>";
+		};
+		AD249B761DADDB6F000CB08D /* create barcode */ = {
+			isa = PBXGroup;
+			children = (
+				AD249B781DADDB9F000CB08D /* QRCodeTool.swift */,
+			);
+			name = "create barcode";
+			sourceTree = "<group>";
+		};
+		AD249B771DADDB77000CB08D /* barcode */ = {
+			isa = PBXGroup;
+			children = (
+				AD249B761DADDB6F000CB08D /* create barcode */,
+				AD249B751DADDB3A000CB08D /* Scan barcode */,
+			);
+			name = barcode;
+			sourceTree = "<group>";
+		};
+		AD249B7C1DADDCA2000CB08D /* AddedFriend */ = {
+			isa = PBXGroup;
+			children = (
+				ADA931081DAA11B100D9C0D3 /* AddedFriendTableViewController.swift */,
+			);
+			name = AddedFriend;
+			sourceTree = "<group>";
+		};
+		AD249B7D1DADDCAC000CB08D /* MyFriends */ = {
+			isa = PBXGroup;
+			children = (
+				ADA9310A1DAA15A200D9C0D3 /* MyFriendsTableViewController.swift */,
+			);
+			name = MyFriends;
+			sourceTree = "<group>";
+		};
+		AD249B831DAE26A4000CB08D /* Data Source and info */ = {
+			isa = PBXGroup;
+			children = (
+				ADB4307D1DB0EF360097FE90 /* Added Friend Message */,
+				ADB4306F1DAF77990097FE90 /* ShakeShake */,
+				ADB4306A1DAE2DE80097FE90 /* StoryMessage */,
+				ADB430691DAE2DDF0097FE90 /* Friends */,
+			);
+			name = "Data Source and info";
+			sourceTree = "<group>";
+		};
+		ADA4BA541D8D17AB0058E13D /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				AD249B701DACDF3E000CB08D /* Send friends */,
+				AD0BEF6B1D97ABB700DF1732 /* ImageEdit */,
+				ADA4BA551D8D18D60058E13D /* CameraViewController.swift */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		ADA4BA571D8D2BA00058E13D /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				ADA930F91DA899F000D9C0D3 /* tableViewCell */,
+				ADA930F41DA88C9200D9C0D3 /* object structure */,
+				ADA4BA581D8D2BC40058E13D /* StoryViewController.swift */,
+				ADA930F01DA8889700D9C0D3 /* StoryViewController_TableView.swift */,
+			);
+			name = Story;
+			sourceTree = "<group>";
+		};
+		ADA4BA5A1D8D3CD60058E13D /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A3011D9FA5E600C6CC4A /* View Controller */,
+				ADF9A2FA1D9F931100C6CC4A /* Model Classes */,
+				ADA4BA5B1D8D3CF80058E13D /* DiscoveryViewController.swift */,
+			);
+			name = Discovery;
+			sourceTree = "<group>";
+		};
+		ADA4BA5D1D8D3F1D0058E13D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				ADA4BA5E1D8D3F2D0058E13D /* ChatViewController.swift */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		ADA4BA681D979A320058E13D /* storyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				AD249B731DACDF67000CB08D /* photo */,
+				ADA931021DAA0F2400D9C0D3 /* User */,
+				ADF9A3181DA4F8FE00C6CC4A /* Story */,
+				ADF9A3081DA0BF8600C6CC4A /* shakeShake */,
+				ADF9A2F31D9F91B200C6CC4A /* Discovery */,
+				AD0BEFDC1D9CC2AF00DF1732 /* memory */,
+				22656DEB1C2059C100BF6959 /* Main.storyboard */,
+				ADF9A2EC1D9E101200C6CC4A /* login.storyboard */,
+			);
+			name = storyBoard;
+			sourceTree = "<group>";
+		};
+		ADA930F41DA88C9200D9C0D3 /* object structure */ = {
+			isa = PBXGroup;
+			children = (
+				ADA930F51DA88CAC00D9C0D3 /* Story.swift */,
+				ADA930F71DA88CB900D9C0D3 /* Magazine.swift */,
+			);
+			name = "object structure";
+			sourceTree = "<group>";
+		};
+		ADA930F91DA899F000D9C0D3 /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				ADA930F21DA8897300D9C0D3 /* StoryCollectionCell.swift */,
+				ADA930FA1DA89A1100D9C0D3 /* MessageCell.swift */,
+				ADA930FC1DA89A2600D9C0D3 /* SubcriptionCell.swift */,
+			);
+			name = tableViewCell;
+			sourceTree = "<group>";
+		};
+		ADA930FE1DAA054600D9C0D3 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				ADA930FF1DAA056400D9C0D3 /* lockViewController.swift */,
+			);
+			name = Lock;
+			sourceTree = "<group>";
+		};
+		ADA931011DAA0F1500D9C0D3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A30B1DA0BFAA00C6CC4A /* shakeShake */,
+				ADA931071DAA117600D9C0D3 /* FriendsRelated */,
+				ADA931051DAA107F00D9C0D3 /* UserViewController.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		ADA931021DAA0F2400D9C0D3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				ADA931031DAA0F3300D9C0D3 /* User.storyboard */,
+				AD249B811DADDE4E000CB08D /* Barcode.storyboard */,
+				ADB430791DAFA5D20097FE90 /* SocialShare.storyboard */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		ADA931071DAA117600D9C0D3 /* FriendsRelated */ = {
+			isa = PBXGroup;
+			children = (
+				AD249B7D1DADDCAC000CB08D /* MyFriends */,
+				AD249B7C1DADDCA2000CB08D /* AddedFriend */,
+				AD249B6B1DAB79C2000CB08D /* AddFriend */,
+			);
+			name = FriendsRelated;
+			sourceTree = "<group>";
+		};
+		ADB430691DAE2DDF0097FE90 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				AD249B841DAE26C1000CB08D /* Friends.swift */,
+				AD249B861DAE26EA000CB08D /* User.swift */,
+			);
+			name = Friends;
+			sourceTree = "<group>";
+		};
+		ADB4306A1DAE2DE80097FE90 /* StoryMessage */ = {
+			isa = PBXGroup;
+			children = (
+				ADB4306B1DAE2DF90097FE90 /* StoryMessage.swift */,
+				ADB4306D1DAE2E020097FE90 /* StoryMessages.swift */,
+			);
+			name = StoryMessage;
+			sourceTree = "<group>";
+		};
+		ADB4306F1DAF77990097FE90 /* ShakeShake */ = {
+			isa = PBXGroup;
+			children = (
+				ADB430701DAF957C0097FE90 /* shakeShakeMessage.swift */,
+				ADB430721DAF95C30097FE90 /* shakeShakeMessages.swift */,
+			);
+			name = ShakeShake;
+			sourceTree = "<group>";
+		};
+		ADB430761DAFA53C0097FE90 /* socialShare */ = {
+			isa = PBXGroup;
+			children = (
+				ADB430771DAFA5960097FE90 /* socialShareViewController.swift */,
+			);
+			name = socialShare;
+			sourceTree = "<group>";
+		};
+		ADB4307D1DB0EF360097FE90 /* Added Friend Message */ = {
+			isa = PBXGroup;
+			children = (
+				ADB4307E1DB0EF5B0097FE90 /* AddedFriendMessage.swift */,
+				ADB430801DB0EF8F0097FE90 /* AddedFriendMessages.swift */,
+			);
+			name = "Added Friend Message";
+			sourceTree = "<group>";
+		};
+		ADF9A2F01D9E1F4800C6CC4A /* draw line */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A2EE1D9E188100C6CC4A /* DrawingView.swift */,
+				ADF9A2F11D9E1F5A00C6CC4A /* Line.swift */,
+			);
+			name = "draw line";
+			sourceTree = "<group>";
+		};
+		ADF9A2F31D9F91B200C6CC4A /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A2F41D9F91E900C6CC4A /* Discovery.storyboard */,
+			);
+			name = Discovery;
+			sourceTree = "<group>";
+		};
+		ADF9A2FA1D9F931100C6CC4A /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A2FB1D9F932600C6CC4A /* Publisher.swift */,
+				ADF9A2FD1D9F933A00C6CC4A /* Publishers.swift */,
+			);
+			name = "Model Classes";
+			sourceTree = "<group>";
+		};
+		ADF9A3011D9FA5E600C6CC4A /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A2F61D9F92D600C6CC4A /* PublishersCollectionViewCell.swift */,
+				ADF9A2F81D9F92FD00C6CC4A /* PublishersCollectionViewController.swift */,
+				ADF9A2FF1D9F938D00C6CC4A /* WebViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		ADF9A3021D9FA61A00C6CC4A /* Snap */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A3031D9FA62B00C6CC4A /* SnapViewController.swift */,
+				ADB4307B1DAFAFA40097FE90 /* ImageEditViewController_Same.swift */,
+			);
+			name = Snap;
+			sourceTree = "<group>";
+		};
+		ADF9A3081DA0BF8600C6CC4A /* shakeShake */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A3091DA0BF9100C6CC4A /* shakeShake.storyboard */,
+			);
+			name = shakeShake;
+			sourceTree = "<group>";
+		};
+		ADF9A30B1DA0BFAA00C6CC4A /* shakeShake */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A3131DA0C44A00C6CC4A /* MP3 */,
+				ADF9A30C1DA0BFC200C6CC4A /* ShakeShakeViewController.swift */,
+				AD2CCF6C1DAB6F9D006A9BB8 /* editViewControllerInShake.swift */,
+			);
+			name = shakeShake;
+			sourceTree = "<group>";
+		};
+		ADF9A3131DA0C44A00C6CC4A /* MP3 */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A3141DA0C44A00C6CC4A /* rock.mp3 */,
+				ADF9A3151DA0C44A00C6CC4A /* rock_end.mp3 */,
+			);
+			path = MP3;
+			sourceTree = "<group>";
+		};
+		ADF9A3181DA4F8FE00C6CC4A /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9A3191DA4F91700C6CC4A /* Story.storyboard */,
+			);
+			name = Story;
+			sourceTree = "<group>";
+		};
+		C6164C121984D1CD00F8F7D7 = {
+			isa = PBXGroup;
+			children = (
+				ADB430741DAFA5120097FE90 /* Social.framework */,
+				C6164C1D1984D1CD00F8F7D7 /* SnapChat-V3 */,
+				C6164C301984D1CD00F8F7D7 /* SnapchatSwipeViewTests */,
+				C6164C1C1984D1CD00F8F7D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6164C1C1984D1CD00F8F7D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6164C1B1984D1CD00F8F7D7 /* SnapChat-V3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6164C1D1984D1CD00F8F7D7 /* SnapChat-V3 */ = {
+			isa = PBXGroup;
+			children = (
+				AD249B831DAE26A4000CB08D /* Data Source and info */,
+				ADA931011DAA0F1500D9C0D3 /* User */,
+				AD0BEFD91D9CC26600DF1732 /* Memory */,
+				AD0BEF621D979E7A00DF1732 /* Login */,
+				ADA4BA5D1D8D3F1D0058E13D /* Chat */,
+				ADA4BA5A1D8D3CD60058E13D /* Discovery */,
+				ADA4BA571D8D2BA00058E13D /* Story */,
+				ADA4BA541D8D17AB0058E13D /* Camera */,
+				ADA4BA681D979A320058E13D /* storyBoard */,
+				22D3F9201B87A8B800D132E3 /* AppDelegate.swift */,
+				22656DED1C205A6800BF6959 /* Launch Screen.storyboard */,
+				ADA4BA661D9792EB0058E13D /* Images.xcassets */,
+				2200D71B1B87A97E0081389A /* Container View */,
+				C6164C1E1984D1CD00F8F7D7 /* Supporting Files */,
+			);
+			name = "SnapChat-V3";
+			path = SnapchatSwipeView;
+			sourceTree = "<group>";
+		};
+		C6164C1E1984D1CD00F8F7D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6164C1F1984D1CD00F8F7D7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6164C301984D1CD00F8F7D7 /* SnapchatSwipeViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6164C331984D1CD00F8F7D7 /* SnapchatSwipeViewTests.swift */,
+				C6164C311984D1CD00F8F7D7 /* Supporting Files */,
+			);
+			path = SnapchatSwipeViewTests;
+			sourceTree = "<group>";
+		};
+		C6164C311984D1CD00F8F7D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6164C321984D1CD00F8F7D7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6164C1A1984D1CD00F8F7D7 /* SnapChat-V3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6164C371984D1CD00F8F7D7 /* Build configuration list for PBXNativeTarget "SnapChat-V3" */;
+			buildPhases = (
+				C6164C171984D1CD00F8F7D7 /* Sources */,
+				C6164C181984D1CD00F8F7D7 /* Frameworks */,
+				C6164C191984D1CD00F8F7D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SnapChat-V3";
+			productName = SnapchatSwipeView;
+			productReference = C6164C1B1984D1CD00F8F7D7 /* SnapChat-V3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6164C131984D1CD00F8F7D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Brendan Lee";
+				TargetAttributes = {
+					C6164C1A1984D1CD00F8F7D7 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = H6V2GTYPDP;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = C6164C161984D1CD00F8F7D7 /* Build configuration list for PBXProject "SnapChat-V3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6164C121984D1CD00F8F7D7;
+			productRefGroup = C6164C1C1984D1CD00F8F7D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6164C1A1984D1CD00F8F7D7 /* SnapChat-V3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6164C191984D1CD00F8F7D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF9A31A1DA4F91700C6CC4A /* Story.storyboard in Resources */,
+				AD249B821DADDE4E000CB08D /* Barcode.storyboard in Resources */,
+				ADA4BA671D9792EB0058E13D /* Images.xcassets in Resources */,
+				ADF9A3161DA0C44A00C6CC4A /* rock.mp3 in Resources */,
+				ADF9A30A1DA0BF9100C6CC4A /* shakeShake.storyboard in Resources */,
+				22656DEE1C205A6800BF6959 /* Launch Screen.storyboard in Resources */,
+				ADB4307A1DAFA5D20097FE90 /* SocialShare.storyboard in Resources */,
+				22656DEC1C2059C100BF6959 /* Main.storyboard in Resources */,
+				ADF9A3171DA0C44A00C6CC4A /* rock_end.mp3 in Resources */,
+				ADF9A2F51D9F91E900C6CC4A /* Discovery.storyboard in Resources */,
+				AD0BEF681D97A9F100DF1732 /* ImageEdit.storyboard in Resources */,
+				AD0BEFE01D9CED3500DF1732 /* photoAlbum.storyboard in Resources */,
+				AD0BEFDE1D9CC2CE00DF1732 /* memory.storyboard in Resources */,
+				ADA931041DAA0F3300D9C0D3 /* User.storyboard in Resources */,
+				ADF9A2ED1D9E101200C6CC4A /* login.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6164C171984D1CD00F8F7D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0BEF651D979E9D00DF1732 /* LoginViewController.swift in Sources */,
+				ADB4306C1DAE2DF90097FE90 /* StoryMessage.swift in Sources */,
+				ADB430811DB0EF8F0097FE90 /* AddedFriendMessages.swift in Sources */,
+				ADA930F81DA88CB900D9C0D3 /* Magazine.swift in Sources */,
+				ADB430711DAF957C0097FE90 /* shakeShakeMessage.swift in Sources */,
+				AD2CCF6D1DAB6F9D006A9BB8 /* editViewControllerInShake.swift in Sources */,
+				AD249B851DAE26C1000CB08D /* Friends.swift in Sources */,
+				ADA9310B1DAA15A200D9C0D3 /* MyFriendsTableViewController.swift in Sources */,
+				AD0BEFE71D9D11D500DF1732 /* PageViewController.swift in Sources */,
+				AD0BEFDB1D9CC28400DF1732 /* MemoryViewController.swift in Sources */,
+				AD0BEF661D979E9D00DF1732 /* RegisterViewController.swift in Sources */,
+				AD249B6F1DAB7B13000CB08D /* searchTableViewController.swift in Sources */,
+				ADF9A3001D9F938D00C6CC4A /* WebViewController.swift in Sources */,
+				ADA4BA591D8D2BC40058E13D /* StoryViewController.swift in Sources */,
+				ADA4BA5C1D8D3CF80058E13D /* DiscoveryViewController.swift in Sources */,
+				ADF9A30D1DA0BFC200C6CC4A /* ShakeShakeViewController.swift in Sources */,
+				ADA930F11DA8889700D9C0D3 /* StoryViewController_TableView.swift in Sources */,
+				22656DEA1C1F67D700BF6959 /* VerticalScrollViewController.swift in Sources */,
+				ADA930FD1DA89A2600D9C0D3 /* SubcriptionCell.swift in Sources */,
+				ADB4306E1DAE2E020097FE90 /* StoryMessages.swift in Sources */,
+				ADB430731DAF95C30097FE90 /* shakeShakeMessages.swift in Sources */,
+				AD249B7F1DADDE2C000CB08D /* QRCodeViewController.swift in Sources */,
+				ADA930F31DA8897300D9C0D3 /* StoryCollectionCell.swift in Sources */,
+				ADF9A2EF1D9E188100C6CC4A /* DrawingView.swift in Sources */,
+				ADB430781DAFA5960097FE90 /* socialShareViewController.swift in Sources */,
+				ADA9310D1DAA166B00D9C0D3 /* AddFriendTableViewController.swift in Sources */,
+				ADA930FB1DA89A1100D9C0D3 /* MessageCell.swift in Sources */,
+				ADA931061DAA107F00D9C0D3 /* UserViewController.swift in Sources */,
+				ADF9A2FE1D9F933A00C6CC4A /* Publishers.swift in Sources */,
+				AD249B791DADDB9F000CB08D /* QRCodeTool.swift in Sources */,
+				ADF9A2F71D9F92D600C6CC4A /* PublishersCollectionViewCell.swift in Sources */,
+				AD249B871DAE26EA000CB08D /* User.swift in Sources */,
+				ADB4307C1DAFAFA40097FE90 /* ImageEditViewController_Same.swift in Sources */,
+				ADA4BA5F1D8D3F2D0058E13D /* ChatViewController.swift in Sources */,
+				AD0BEF6A1D97ABB100DF1732 /* ImageEditViewController.swift in Sources */,
+				ADB4307F1DB0EF5B0097FE90 /* AddedFriendMessage.swift in Sources */,
+				ADA4BA561D8D18D60058E13D /* CameraViewController.swift in Sources */,
+				ADF9A3041D9FA62B00C6CC4A /* SnapViewController.swift in Sources */,
+				22D3F9311B87A8B800D132E3 /* SnapContainerViewController.swift in Sources */,
+				AD0BEFE91D9D1B0600DF1732 /* UpdatedMemoryViewController.swift in Sources */,
+				ADF9A2F21D9E1F5A00C6CC4A /* Line.swift in Sources */,
+				ADA930F61DA88CAC00D9C0D3 /* Story.swift in Sources */,
+				AD249B721DACDF59000CB08D /* sendViewController.swift in Sources */,
+				ADF9A2F91D9F92FD00C6CC4A /* PublishersCollectionViewController.swift in Sources */,
+				ADA931091DAA11B100D9C0D3 /* AddedFriendTableViewController.swift in Sources */,
+				ADF9A2FC1D9F932600C6CC4A /* Publisher.swift in Sources */,
+				22D3F92C1B87A8B800D132E3 /* AppDelegate.swift in Sources */,
+				AD0BEFE31D9CEE3600DF1732 /* PhotoAlbumViewController.swift in Sources */,
+				ADA931001DAA056400D9C0D3 /* lockViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C6164C351984D1CD00F8F7D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6164C361984D1CD00F8F7D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6164C381984D1CD00F8F7D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SnapchatSwipeView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WHatEVer.SnapChat-V3";
+				PRODUCT_NAME = "SnapChat-V3";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C6164C391984D1CD00F8F7D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SnapchatSwipeView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WHatEVer.SnapChat-V3";
+				PRODUCT_NAME = "SnapChat-V3";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6164C161984D1CD00F8F7D7 /* Build configuration list for PBXProject "SnapChat-V3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6164C351984D1CD00F8F7D7 /* Debug */,
+				C6164C361984D1CD00F8F7D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6164C371984D1CD00F8F7D7 /* Build configuration list for PBXNativeTarget "SnapChat-V3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6164C381984D1CD00F8F7D7 /* Debug */,
+				C6164C391984D1CD00F8F7D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6164C131984D1CD00F8F7D7 /* Project object */;
+}

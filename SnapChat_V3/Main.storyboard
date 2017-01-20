@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="7mW-s9-VXD">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="WGZ-RQ-mh1">
+            <objects>
+                <viewController storyboardIdentifier="left" id="D4e-Tq-zo2" customClass="ChatViewController" customModule="SnapChat_V3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sBV-NI-4lL"/>
+                        <viewControllerLayoutGuide type="bottom" id="BEo-9u-B1v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ok2-0r-KgS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sqs-p8-LBn">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Chat" id="2NT-oX-Rx2">
+                                        <barButtonItem key="rightBarButtonItem" title="Camera" id="B8Q-gy-8iQ">
+                                            <connections>
+                                                <action selector="backToCamera:" destination="D4e-Tq-zo2" id="NVE-SG-WHi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barPosition">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ttT-HS-94R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="452"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gty-Cw-mH7">
+            <objects>
+                <viewController storyboardIdentifier="top" id="QdS-eL-Xpi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rdi-hl-Jfw"/>
+                        <viewControllerLayoutGuide type="bottom" id="8ac-oO-l8V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZVC-z7-zsq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2E-8H-8BT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="-345"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="nPN-Xb-rSo">
+            <objects>
+                <viewController storyboardIdentifier="middle" id="KoD-D9-V8H" customClass="CameraViewController" customModule="SnapChat_V3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ghb-2x-Sw0"/>
+                        <viewControllerLayoutGuide type="bottom" id="fVr-5m-2Sl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NxN-Tu-jtI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pqm-JS-ESM" userLabel="cameraView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GcM-77-K7p" userLabel="tempImageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxF-Df-H4h" userLabel="Flash button">
+                                <rect key="frame" x="23" y="20" width="115" height="48.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Flash Is Off"/>
+                                <connections>
+                                    <action selector="switchFlash:" destination="KoD-D9-V8H" eventType="touchUpInside" id="Lac-8b-iLY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5W-aJ-T5d" userLabel="Cam button">
+                                <rect key="frame" x="274" y="28" width="120" height="30"/>
+                                <state key="normal" title="Back Cam">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchCam:" destination="KoD-D9-V8H" eventType="touchUpInside" id="aVb-Z0-beP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0n8-Ct-Zqq">
+                                <rect key="frame" x="169" y="626" width="77" height="30"/>
+                                <state key="normal" title="Take Photo"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="KoD-D9-V8H" eventType="touchUpInside" id="t99-UW-T59"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="camButton" destination="D5W-aJ-T5d" id="F3L-1w-7aC"/>
+                        <outlet property="cameraView" destination="Pqm-JS-ESM" id="CMx-kz-N7G"/>
+                        <outlet property="flashButton" destination="TxF-Df-H4h" id="qoV-ya-5nU"/>
+                        <segue destination="iI6-9e-2AG" kind="modal" identifier="goToImageEdit" animates="NO" id="HqK-4G-xnR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRN-ZT-e9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="452"/>
+        </scene>
+        <!--Memory-->
+        <scene sceneID="AXu-Fo-MxG">
+            <objects>
+                <viewController storyboardIdentifier="bottom" title="Memory" id="kco-nZ-g8G" customClass="UpdatedMemoryViewController" customModule="SnapChat_V3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ugp-zS-0KB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iwy-fE-noU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yaf-Iu-xvq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U9r-80-VYi">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Memory" id="S9E-tW-fnj">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="y1t-8U-G9j">
+                                            <connections>
+                                                <action selector="backToCamera:" destination="kco-nZ-g8G" id="DP1-1V-of1"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barPosition">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Snap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW2-oD-KYj" userLabel="pageName">
+                                <rect key="frame" x="0.0" y="707" width="144" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="nevigationBar" destination="U9r-80-VYi" id="EZt-0e-ejx"/>
+                        <outlet property="pageNameLabel" destination="OW2-oD-KYj" id="MNh-vd-ZTh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rkS-UZ-V30" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="1280"/>
+        </scene>
+        <!--ImageEdit-->
+        <scene sceneID="cVn-hc-KAr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ImageEdit" id="iI6-9e-2AG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nG1-Ls-juS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdR-RJ-lF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687.5" y="411"/>
+        </scene>
+        <!--Story-->
+        <scene sceneID="hI4-X6-iVL">
+            <objects>
+                <viewController storyboardIdentifier="right" title="Story" id="che-eb-Nij" customClass="StoryViewController" customModule="SnapChat_V3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S1d-eX-dGW"/>
+                        <viewControllerLayoutGuide type="bottom" id="BYK-rx-G44"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O9H-IL-kB3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Al-ht-bAu">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Story" id="GTR-xB-tls">
+                                        <barButtonItem key="leftBarButtonItem" title="Camera" id="ywG-PX-9CB">
+                                            <connections>
+                                                <action selector="backToCamera:" destination="che-eb-Nij" id="B8C-sj-IVS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Discovery" id="Ga4-uP-8Um">
+                                            <connections>
+                                                <action selector="goToDiscovery:" destination="che-eb-Nij" id="hQr-BJ-Eke"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barPosition">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CIy-0U-Pz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="481"/>
+        </scene>
+        <!--Snap Container View Controller-->
+        <scene sceneID="8Ll-w5-5K9">
+            <objects>
+                <viewController storyboardIdentifier="mainContainer" id="7mW-s9-VXD" customClass="SnapContainerViewController" customModule="SnapChat_V3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Up-vm-B9a"/>
+                        <viewControllerLayoutGuide type="bottom" id="6qm-ey-T1T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zse-np-zfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.45315772738172277" green="1" blue="0.78057641781377507" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqJ-KQ-xqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="1374"/>
+        </scene>
+        <!--Discovery View Controller-->
+        <scene sceneID="iAE-gG-qxD">
+            <objects>
+                <viewController storyboardIdentifier="rightMost" id="vW2-Dv-sPH" customClass="DiscoveryViewController" customModule="SnapChat_V3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dgs-fW-s13"/>
+                        <viewControllerLayoutGuide type="bottom" id="a0A-bR-xFL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6kP-us-uED">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2E0-67-WeG">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.4421049963" blue="0.74236907519999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Discovery" id="a8s-an-i85">
+                                        <barButtonItem key="leftBarButtonItem" title="Story" id="63x-Me-JIr">
+                                            <connections>
+                                                <action selector="backToStory:" destination="vW2-Dv-sPH" id="8gR-FG-vWJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barPosition">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jgq-Bl-2wq">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="1" green="0.94408811479999999" blue="0.3627791433" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bx8-Ct-B7g">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONA-gY-Cwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765" y="452"/>
+        </scene>
+    </scenes>
+</document>

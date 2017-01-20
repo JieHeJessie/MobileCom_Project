@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ujr-Tl-4yb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--ShakeShakeViewController-->
+        <scene sceneID="P4K-MD-zW0">
+            <objects>
+                <viewController title="ShakeShakeViewController" id="ujr-Tl-4yb" customClass="ShakeShakeViewController" customModule="SnapChat_V3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fnR-EC-HBk"/>
+                        <viewControllerLayoutGuide type="bottom" id="PjZ-ef-RM5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3e8-tf-OMF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shake_newbg-1" translatesAutoresizingMaskIntoConstraints="NO" id="82D-90-pN5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="rock_down" translatesAutoresizingMaskIntoConstraints="NO" id="lSO-hk-OD9">
+                                <rect key="frame" x="87" y="170" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="n25-ev-mLJ"/>
+                                    <constraint firstAttribute="height" constant="128" id="rXG-Yg-qAr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="rock_up" translatesAutoresizingMaskIntoConstraints="NO" id="xgi-oe-HEK">
+                                <rect key="frame" x="87" y="42" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="O5N-61-A1B"/>
+                                    <constraint firstAttribute="width" constant="240" id="U8r-XO-A7D"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lSO-hk-OD9" firstAttribute="centerX" secondItem="3e8-tf-OMF" secondAttribute="centerX" id="2PR-se-2Lz"/>
+                            <constraint firstItem="xgi-oe-HEK" firstAttribute="centerX" secondItem="3e8-tf-OMF" secondAttribute="centerX" id="9JL-HP-Fod"/>
+                            <constraint firstItem="PjZ-ef-RM5" firstAttribute="top" secondItem="82D-90-pN5" secondAttribute="bottom" id="FZZ-gx-rBS"/>
+                            <constraint firstItem="82D-90-pN5" firstAttribute="leading" secondItem="3e8-tf-OMF" secondAttribute="leading" id="Lk6-m3-UKt"/>
+                            <constraint firstItem="82D-90-pN5" firstAttribute="top" secondItem="3e8-tf-OMF" secondAttribute="top" id="MiF-PE-mrw"/>
+                            <constraint firstAttribute="trailing" secondItem="82D-90-pN5" secondAttribute="trailing" id="tPH-es-q4e"/>
+                            <constraint firstItem="lSO-hk-OD9" firstAttribute="top" secondItem="xgi-oe-HEK" secondAttribute="bottom" id="yOX-Bf-AJJ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="rockdownImage" destination="lSO-hk-OD9" id="Lbo-Bo-xwm"/>
+                        <outlet property="rockupImage" destination="xgi-oe-HEK" id="656-3l-3LL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WTi-jM-XgK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366.5" y="449.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rock_down" width="450" height="254"/>
+        <image name="rock_up" width="450" height="254"/>
+        <image name="shake_newbg-1" width="640" height="1136"/>
+    </resources>
+</document>
